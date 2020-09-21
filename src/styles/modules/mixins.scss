@@ -1,9 +1,0 @@
-@mixin text-overflow($max-lines-visible: 1, $type: ellipsis) {
-  display: block;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: $type;
-  overflow-wrap: anywhere;
-  -webkit-line-clamp: $max-lines-visible;
-}
