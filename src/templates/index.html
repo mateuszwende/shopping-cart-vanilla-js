@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Shopping cart</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/images/favicon.png"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Shopping cart</h1>
+    </header>
+    <section class="product-list">
+      <div class="product">
+        <header class="product__header">
+          <h3 class="product__name">Brown T-shirt</h3>
+        </header>
+        <section class="product__body">
+          <img
+            src="https://www.pngarts.com/files/5/Plain-Brown-T-Shirt-Free-PNG-Image.png"
+            alt="Brown T-shirt"
+          />
+          <h4 class="product__price">55.99 PLN</h4>
+          <button
+            type="button"
+            class="btn btn-primary js-btn-add"
+            data-id="1"
+            data-name="Brown T-shirt"
+            data-price="55.99"
+            data-img="https://www.pngarts.com/files/5/Plain-Brown-T-Shirt-Free-PNG-Image.png"
+          >
+            Add to cart
+          </button>
+        </section>
+      </div>
+      <div class="product">
+        <header class="product__header">
+          <h3 class="product__name">Yellow T-shirt</h3>
+        </header>
+        <section class="product__body">
+          <img
+            src="https://www.pngarts.com/files/5/Plain-Blue-T-Shirt-Transparent-Image.png"
+            alt="Blue T-shirt"
+          />
+          <h4 class="product__price">119.99 PLN</h4>
+          <button
+            type="button"
+            class="btn btn-primary js-btn-add"
+            data-id="2"
+            data-name="Blue T-shirt"
+            data-price="119.99"
+            data-img="https://www.pngarts.com/files/5/Plain-Blue-T-Shirt-Transparent-Image.png"
+          >
+            Add to cart
+          </button>
+        </section>
+      </div>
+      <div class="product">
+        <header class="product__header">
+          <h3 class="product__name">Green T-shirt</h3>
+        </header>
+        <section class="product__body">
+          <img
+            src="https://www.pngarts.com/files/5/Plain-Green-T-Shirt-Transparent-Image.png"
+            alt="Green T-shirt"
+          />
+          <h4 class="product__price">99.99 PLN</h4>
+          <button
+            type="button"
+            class="btn btn-primary js-btn-add"
+            data-id="3"
+            data-name="Green T-shirt"
+            data-price="99.99"
+            data-img="https://www.pngarts.com/files/5/Plain-Green-T-Shirt-Transparent-Image.png"
+          >
+            Add to cart
+          </button>
+        </section>
+      </div>
+    </section>
+    <section class="cart-container">
+      <h2>Cart</h2>
+      <section class="cart js-cart"></section>
+      <section class="summary">
+        <p><b>Total: </b><span class="total js-total"></span></p>
+      </section>
+    </section>
+  </body>
+</html>

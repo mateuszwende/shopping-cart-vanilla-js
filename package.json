@@ -1,0 +1,47 @@
+{
+  "name": "shopping-cart-js",
+  "version": "1.0.0",
+  "description": "Shopping cart in vanilla js",
+  "license": "ISC",
+  "author": "Mateusz Wende",
+  "homepage": "https://mateuszwende.github.io/shopping-cart-vanilla-js",
+  "scripts": {
+    "build": "webpack --config webpack.config.prod.js",
+    "start:dev": "webpack-dev-server --config webpack.config.dev.js",
+    "start:prod": "webpack --config webpack.config.prod.js && http-server ./dist -o",
+    "deploy": "npm run start:prod && gh-pages -d dist"
+  },
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "autoprefixer": "^9.8.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.1",
+    "css-loader": "^3.5.3",
+    "cssnano": "^4.1.10",
+    "file-loader": "^6.0.0",
+    "glob": "^7.1.6",
+    "html-webpack-plugin": "^4.3.0",
+    "http-server": "^0.12.3",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^2.0.5",
+    "raw-loader": "^4.0.1",
+    "sass": "^1.26.3",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "stylelint": "^13.5.0",
+    "stylelint-config-standard": "^20.0.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  }
+}
