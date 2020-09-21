@@ -8,8 +8,8 @@
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
     "start:dev": "webpack-dev-server --config webpack.config.dev.js",
-    "start:prod": "webpack --config webpack.config.prod.js && http-server ./dist -o",
-    "deploy": "npm run start:prod && gh-pages -d dist"
+    "start:prod": "npm run build && http-server ./dist -o",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "gh-pages": "^2.2.0"

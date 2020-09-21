@@ -3,6 +3,7 @@
 @import './modules/typography.scss';
 @import './modules/normalize.scss';
 
+@import './partials/header.scss';
 @import './partials/buttons.scss';
 @import './partials/product.scss';
 @import './partials/cart.scss';
@@ -10,11 +11,4 @@
 body {
   background: #5b97cc;
   color: #fff;
-}
-
-header {
-  width: 100%;
-  max-width: $max-width;
-  margin: 0 auto;
-  text-align: center;
 }

@@ -12,7 +12,7 @@ const add = (product, quantity) =>
           'quantity',
           get(product.id).quantity + (quantity || 1),
         )
-      : save(list().concat({ ...product, quantity: quantity || 1 }))
+      : save(list().concat(Object.assign(product, { quantity: quantity || 1 })))
     : null;
 
 const remove = (id) => save(list().filter((product) => product.id !== id));
@@ -25,7 +25,7 @@ const quantity = (id, diff) =>
 const update = (id, field, value) =>
   save(
     list().map((product) =>
-      product.id === id ? { ...product, [field]: value } : product,
+      product.id === id ? Object.assign(product, { [field]: value }) : product,
     ),
   );
 
